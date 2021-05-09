@@ -4,7 +4,7 @@ import Layout from '../components/Layout'
 
 export default function Home() {
   return (
-    <div>
+    <div className="bg-red-600">
       <Head>
         <title>Clean</title>
         <meta name="description" content="Clean" />
