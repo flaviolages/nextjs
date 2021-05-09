@@ -4,9 +4,9 @@ import Layout from '../components/Layout'
 
 export default function Home() {
   return (
-    <div className="bg-red-600">
+    <div className="bg-color1 h-screen">
       <Head>
-        <title>Clean</title>
+        <title>Menu</title>
         <meta name="description" content="Clean" />
         <link rel="icon" href="/favicon.ico" />
       </Head>

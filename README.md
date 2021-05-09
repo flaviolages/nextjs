@@ -35,3 +35,8 @@ git clone https://github.com/flaviolages/nextjs.git
 git remote add origin https://github.com/flaviolages/nextjs.git
 git branch -M main
 git push -u origin main
+
+
+Calculo .rem CSS
+30 / 16 = 1.875rem
+28px = 1.75rem tailwindcss "m-7"

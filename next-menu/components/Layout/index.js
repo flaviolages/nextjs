@@ -1,12 +1,15 @@
+import Header from '../Header';
 
 
 function Layout(){
     return(
-
         <div>
-            Layout
-        </div>
+            <Header/>
 
+            
+
+        
+        </div>
     );
 };
 

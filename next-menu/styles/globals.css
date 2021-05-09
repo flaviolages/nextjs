@@ -1,9 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 a {
@@ -13,4 +17,17 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.bg-color1 {
+  background-color:#F8F9FA;
+
+}
+
+.color1 {
+  color: #E37400;
+}
+
+.bordercolor{
+  border-bottom: solid 1px #DADCE0;
 }
