@@ -19,7 +19,7 @@ function Header(){
             </button>
 
             <div>
-                logo
+                Logo
             </div>
 
             <div className="flex flex-row">
