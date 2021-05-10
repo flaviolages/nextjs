@@ -6,6 +6,7 @@ function Header(){
 
    const [showNav, setShowNav] = useState(false);
 
+
     return(
 
         <div>
@@ -26,7 +27,7 @@ function Header(){
 
         </div>
 
-        {showNav && <Menu />}
+        <Menu show={showNav}/>
 
 
         </div>
