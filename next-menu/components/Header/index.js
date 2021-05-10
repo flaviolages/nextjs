@@ -22,8 +22,8 @@ function Header(){
                 logo
             </div>
 
-            <div className="flex flex-row gap-4">
-                <button className="text-2xl"><BiCart /></button>
+            <div className="flex flex-row">
+                <button className="text-2xl mr-8"><BiCart /></button>
                 <button><BsPersonBoundingBox /></button>
             </div>
 

@@ -36,7 +36,7 @@ function Menu({show}){
   
         <div className="flex flex-col items-center pl-4 py-2 absolute bottom-0 left-0">
         
-        <div className="flex flex-row gap-4 pb-4">
+        <div className="flex flex-row mb-6 w-32 justify-between">
          <TiSocialFacebookCircular/>
          <TiSocialInstagram />
          <TiSocialLinkedin />
