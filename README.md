@@ -29,12 +29,11 @@ Next Js, Tailwindcss
 
 
 
-[git]
-git clone https://github.com/flaviolages/nextjs.git
-
-git remote add origin https://github.com/flaviolages/nextjs.git
-git branch -M main
-git push -u origin main
+/git
+    git clone https://github.com/flaviolages/nextjs.git
+    git remote add origin https://github.com/flaviolages/nextjs.git
+    git branch -M main
+    git push -u origin main
 
 
 Calculo .rem CSS
