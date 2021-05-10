@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import { BiMenu } from 'react-icons/bi';
+import { BiMenu, BiCart} from 'react-icons/bi';
+import {BsPersonBoundingBox} from 'react-icons/bs';
 import Menu from './Menu';
 
 function Header(){
@@ -22,7 +23,8 @@ function Header(){
             </div>
 
             <div>
-                nav
+                <button><BiCart /></button>
+                <button><BsPersonBoundingBox /></button>
             </div>
 
         </div>
