@@ -1,11 +1,11 @@
 import {MdHome} from 'react-icons/md'
 import {AiOutlineSearch, AiTwotonePhone} from 'react-icons/ai'
 import {HiIdentification} from 'react-icons/hi'
-import {GiPoliceBadge} from 'react-icons/gi'
+import {TiSocialFacebookCircular, TiSocialInstagram, TiSocialLinkedin, TiSocialTwitter } from 'react-icons/ti'
 
 function Menu({show}){
     return(
-        <div className={show ? 'navbar bg-white absolute inset-y-0 mt-16 w-56 flex flex-col text-gray-500' : 'navbar-active bg-white absolute inset-y-0 mt-16 w-56 flex flex-col text-gray-500'}>
+        <div className={show ? 'navbar-active bg-white absolute inset-y-0 mt-16 w-56 flex flex-col text-gray-500' : 'navbar bg-white absolute inset-y-0 mt-16 w-56 flex flex-col text-gray-500'}>
         
         <div className="flex flex-row items-center hover:bg-gray-200 pl-4 py-2 hover:text-blue-600 rounded-r-xl">
         <AiOutlineSearch /> 
@@ -34,9 +34,16 @@ function Menu({show}){
 
         
   
-        <button className="flex flex-col items-center pl-4 py-2 absolute bottom-0 left-0">
+        <div className="flex flex-col items-center pl-4 py-2 absolute bottom-0 left-0">
         
-        <div className="flex flex-row">
+        <div className="flex flex-row gap-2">
+         <TiSocialFacebookCircular/>
+         <TiSocialInstagram />
+         <TiSocialLinkedin />
+         <TiSocialTwitter />
+        </div>
+
+        <div className="flex flex-row mt-4">
         <h3 className="ml-3 font-semibold text-xs hover:text-blue-600">Politica de Privacidade.</h3>
         </div>
 
@@ -45,7 +52,7 @@ function Menu({show}){
         </div>
 
 
-        </button>
+        </div>
 
         
         
