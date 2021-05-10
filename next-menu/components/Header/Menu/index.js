@@ -5,7 +5,7 @@ import {GiPoliceBadge} from 'react-icons/gi'
 
 function Menu(){
     return(
-        <div className=" absolute inset-y-0 left-0 mt-16 w-56 flex flex-col text-gray-500">
+        <div className="bg-white absolute inset-y-0 left-0 mt-16 w-56 flex flex-col text-gray-500">
         
         <div className="flex flex-row items-center hover:bg-gray-200 pl-4 py-2 hover:text-blue-600 rounded-r-xl">
         <AiOutlineSearch /> 
