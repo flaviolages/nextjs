@@ -23,9 +23,12 @@ Next Js, Tailwindcss
     npm install react-icons --save
 
 
+/nextjs-stripe (Tutorial: https://www.youtube.com/watch?v=XKWJFpZYVAQ)
+    npx create-nextjs-stripe .
+    npm i @stripe/react-stripe-js @stripe/stripe-js axios
 
-
-
+    /server
+        npm i stripe body-parser express cors dotenv
 
 
 
