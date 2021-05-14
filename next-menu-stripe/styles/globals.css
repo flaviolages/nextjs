@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-color1 {
+  background-color:#F8F9FA;
+
+}
+
+.color1 {
+  color: #E37400;
+}
+
+.bordercolor{
+  border-bottom: solid 1px #DADCE0;
+}
+
+.navbar {
+  left: -100%;
+}
+
+.navbar-active{
+  left: 0;
+  transition: all 1s;
+}

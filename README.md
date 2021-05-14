@@ -24,8 +24,8 @@ Next Js, Tailwindcss
 
 
 /nextjs-stripe (Tutorial: https://www.youtube.com/watch?v=XKWJFpZYVAQ)
-    npx create-nextjs-stripe .
-    npm i @stripe/react-stripe-js @stripe/stripe-js axios
+    npx create-nextjs-menu-stripe
+    yarn add strapi @stripe/react-stripe-js @stripe/stripe-js axios
 
     /server
         npm i stripe body-parser express cors dotenv

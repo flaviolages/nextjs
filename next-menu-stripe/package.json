@@ -1,0 +1,26 @@
+{
+  "name": "next",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@stripe/react-stripe-js": "^1.4.0",
+    "@stripe/stripe-js": "^1.14.0",
+    "axios": "^0.21.1",
+    "next": "10.2.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-icons": "^4.2.0",
+    "strapi": "^3.6.2",
+    "stripe": "^8.148.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.2.5",
+    "postcss": "^8.2.14",
+    "tailwindcss": "^2.1.2"
+  }
+}
