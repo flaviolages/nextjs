@@ -43,7 +43,9 @@ function Layout(){
                             </nav>
                         </div>
                         
-                        <div className="justify-center flex-1 flex">Logo</div>
+                        <div className="justify-center flex-1 flex">
+                            <img className="h-8" src="https://res.cloudinary.com/djhntsyxr/image/upload/v1619116001/jetcompanybr/jetcompany-logomarca_ifpspo.png"></img>
+                        </div>
 
                         <div className="flex justify-end flex-1 space-x-8">
                         <CartPerson clickShowCart={clickShowCart} />
