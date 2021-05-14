@@ -58,6 +58,52 @@ function SideBarCart(props){
                                             </li>   
 
 
+                                            <li className="flex flex-row space-x-8 py-8">
+                                               
+                                               <div className="w-16 h-16 bg-violet relative overflow-hidden cursor-pointer">
+                                                   <div className="">
+                                                       <div className="block max-w-max">
+                                                           <img src="https://res.cloudinary.com/djhntsyxr/image/upload/v1619286371/jetcompanybr/152500697_471461290903439_691640409675796578_n_z8f6xb.jpg"></img>
+                                                       </div>
+                                                   </div>
+                                               </div>
+
+                                               <div className="flex-1 flex flex-col text-base">
+                                               <h2 className="font-bold text-lg cursor-pointer leading-6">Produto</h2>
+                                               </div>
+
+                                               <div className="flex flex-col justify-between space-y-2 text-base">
+                                                   <h3>R$190</h3>
+                                                   <button className="flex justify-end outline-none">
+                                                       <AiOutlineDelete />
+                                                   </button>
+                                               </div>
+                                           </li>
+
+
+
+                                           <li className="flex flex-row space-x-8 py-8">
+                                               
+                                               <div className="w-16 h-16 bg-violet relative overflow-hidden cursor-pointer">
+                                                   <div className="">
+                                                       <div className="block max-w-max">
+                                                           <img src="https://res.cloudinary.com/djhntsyxr/image/upload/v1619286371/jetcompanybr/152500697_471461290903439_691640409675796578_n_z8f6xb.jpg"></img>
+                                                       </div>
+                                                   </div>
+                                               </div>
+
+                                               <div className="flex-1 flex flex-col text-base">
+                                               <h2 className="font-bold text-lg cursor-pointer leading-6">Produto</h2>
+                                               </div>
+
+                                               <div className="flex flex-col justify-between space-y-2 text-base">
+                                                   <h3>R$190</h3>
+                                                   <button className="flex justify-end outline-none">
+                                                       <AiOutlineDelete />
+                                                   </button>
+                                               </div>
+                                           </li>
+
 
 
                                         </ul>
