@@ -4,20 +4,16 @@ function SideBarCart(props){
 
     return(
 
-        <div className={props.showNav ? 'SideBarNav w-1/5' :  'SideBarNav w-1/5 hidden'}>
+        <div className={props.showNav ? 'SideBarNav min-w-full' :  'min-w-full SideBarNav hidden'}>
         <div className="absolute inset-0 overflow-hidden">
                 <section className="absolute inset-y-0 left-0 max-w-full flex outline-none">
                     <div className="h-full md:w-screen md:max-w-md">
-                        <div className="h-full flex flex-col text-base bg-accents-1 shadow-xl overflow-y-auto bg-gray-200">
+                        <div className="h-full flex flex-col text-base bg-accents-1 shadow-xl overflow-y-auto bg-gray-200 px-4">
                             <div className="flex flex-col h-full">
                                 <header className="px-4 pt-4 pb-4 sm:px-6">
                                     <div className="flex items-start justify-between space-x-3">
                                         
-                                        
                                         <NavMenu clickShowNav={props.clickShowNav}/>
-
-
-
                                     </div>  
                                 </header>
 
