@@ -3,6 +3,7 @@ import CartPerson from "../CartPerson";
 import SideBarCart from "../SideBarCart";
 import SideBarNav from "../SideBarNav";
 import NavMenu from "../NavMenu";
+import MainContent from "../MainContent";
 
 function Layout(){
 
@@ -53,7 +54,7 @@ function Layout(){
             </div>
 
             <main className="MainContent bg-write">
-                main
+                <MainContent />
             </main>
             
         

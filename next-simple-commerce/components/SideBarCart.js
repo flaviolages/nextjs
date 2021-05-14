@@ -5,7 +5,7 @@ function SideBarCart(props){
 
     return(
 
-        <div className={props.showCart ? 'SideBarCart hidden' : 'SideBarCart '}>
+        <div className={props.showCart ? 'SideBarCart ' : 'SideBarCart hidden'}>
         <div className="absolute inset-0 overflow-hidden">
             <div class="absolute inset-0 bg-black bg-opacity-50 transition-opacity"></div>
                 <section className="absolute inset-y-0 right-0 pl-10 max-w-full flex sm:pl-16 outline-none">
@@ -40,17 +40,17 @@ function SideBarCart(props){
                                                 <div className="w-16 h-16 bg-violet relative overflow-hidden cursor-pointer">
                                                     <div className="">
                                                         <div className="block max-w-max">
-                                                            <img src="https://res.cloudinary.com/djhntsyxr/image/upload/v1619286371/jetcompanybr/152500697_471461290903439_691640409675796578_n_z8f6xb.jpg"></img>
+                                                            <img src="https://res.cloudinary.com/djhntsyxr/image/upload/v1621030413/jetcompanybr/image_lro0i7.png"></img>
                                                         </div>
                                                     </div>
                                                 </div>
 
                                                 <div className="flex-1 flex flex-col text-base">
-                                                <h2 className="font-bold text-lg cursor-pointer leading-6">Produto</h2>
+                                                <h2 className="font-bold text-lg cursor-pointer leading-6">Touca Black</h2>
                                                 </div>
 
                                                 <div className="flex flex-col justify-between space-y-2 text-base">
-                                                    <h3>R$190</h3>
+                                                    <h3>R$69,90</h3>
                                                     <button className="flex justify-end outline-none">
                                                         <AiOutlineDelete />
                                                     </button>
@@ -63,46 +63,23 @@ function SideBarCart(props){
                                                <div className="w-16 h-16 bg-violet relative overflow-hidden cursor-pointer">
                                                    <div className="">
                                                        <div className="block max-w-max">
-                                                           <img src="https://res.cloudinary.com/djhntsyxr/image/upload/v1619286371/jetcompanybr/152500697_471461290903439_691640409675796578_n_z8f6xb.jpg"></img>
+                                                           <img src="https://res.cloudinary.com/djhntsyxr/image/upload/v1621030538/jetcompanybr/image_1_ivcdvg.png"></img>
                                                        </div>
                                                    </div>
                                                </div>
 
                                                <div className="flex-1 flex flex-col text-base">
-                                               <h2 className="font-bold text-lg cursor-pointer leading-6">Produto</h2>
+                                               <h2 className="font-bold text-lg cursor-pointer leading-6">Camise Black</h2>
                                                </div>
 
                                                <div className="flex flex-col justify-between space-y-2 text-base">
-                                                   <h3>R$190</h3>
+                                                   <h3>R$109,90</h3>
                                                    <button className="flex justify-end outline-none">
                                                        <AiOutlineDelete />
                                                    </button>
                                                </div>
-                                           </li>
+                                           </li>  
 
-
-
-                                           <li className="flex flex-row space-x-8 py-8">
-                                               
-                                               <div className="w-16 h-16 bg-violet relative overflow-hidden cursor-pointer">
-                                                   <div className="">
-                                                       <div className="block max-w-max">
-                                                           <img src="https://res.cloudinary.com/djhntsyxr/image/upload/v1619286371/jetcompanybr/152500697_471461290903439_691640409675796578_n_z8f6xb.jpg"></img>
-                                                       </div>
-                                                   </div>
-                                               </div>
-
-                                               <div className="flex-1 flex flex-col text-base">
-                                               <h2 className="font-bold text-lg cursor-pointer leading-6">Produto</h2>
-                                               </div>
-
-                                               <div className="flex flex-col justify-between space-y-2 text-base">
-                                                   <h3>R$190</h3>
-                                                   <button className="flex justify-end outline-none">
-                                                       <AiOutlineDelete />
-                                                   </button>
-                                               </div>
-                                           </li>
 
 
 
