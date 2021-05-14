@@ -1,13 +1,11 @@
 import { AiOutlineClose } from 'react-icons/ai';
 import CartPerson from './CartPerson';
 
-function SideBarCart(){
-
-    
+function SideBarCart(props){
 
     return(
 
-        <div className="SideBarCart">
+        <div className={props.showCart ? 'SideBarCart hidden' : 'SideBarCart'}>
         <div className="absolute inset-0 overflow-hidden">
             <div class="absolute inset-0 bg-black bg-opacity-50 transition-opacity"></div>
                 <section className="absolute inset-y-0 right-0 pl-10 max-w-full flex sm:pl-16 outline-none">
@@ -17,12 +15,12 @@ function SideBarCart(){
                                 <header className="px-4 pt-6 pb-4 sm:px-6">
                                     <div className="flex items-start justify-between space-x-3">
                                         <div className="h-7 flex items-center">
-                                            <button className="hover:text-gray-600">
+                                            <button onClick={props.clickShowCart} className="hover:text-gray-600">
                                             <AiOutlineClose />
                                             </button>
                                         </div>
                                        
-                                        <CartPerson />
+                                        <CartPerson clickShowCart={props.clickShowCart}/>
                                         
 
                                     </div>
