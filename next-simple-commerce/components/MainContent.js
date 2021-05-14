@@ -13,7 +13,7 @@ function MainContent() {
                 
 
                 <div className="col-span-8 order-3 lg:order-none">
-                    <div className="grid lg:grid-cols-3 gap-9">
+                    <div className="grid lg:grid-cols-3 grid-cols-2 gap-9">
                       
                       
                         <a className="max-h-full cursor-pointer relative w-full h-full bg-gray-200">
