@@ -16,14 +16,14 @@ function MainContent() {
                     <div className="grid lg:grid-cols-3 gap-9">
                       
                       
-                        <a className="max-h-full cursor-pointer relative w-full h-full bg-gray-200 ">
+                        <a className="max-h-full cursor-pointer relative w-full h-full bg-gray-200">
                         <div className="flex flex-row justify-between box-border w-full z-20 absolute">
                            <div className=" absolute top-0 pr-16 max-w-full ">
                             <h3 className=" max-w-full w-full bg-white p-4">
-                                Touca Black
+                                Conjunto Red
                             </h3>
                             <span className="bg-white inline-block p-4">
-                                R$ 69,90
+                                R$ 499,90
                             </span>
 
                            </div>
@@ -32,7 +32,7 @@ function MainContent() {
                         <div className="flex items-center justify-items-center overflow-hidden transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-120">
                             <div className="block overflow-hidden relative">
                                 <div className="block relative">
-                                    <img src="https://res.cloudinary.com/djhntsyxr/image/upload/v1621030413/jetcompanybr/image_lro0i7.png"></img>
+                                    <img src="https://res.cloudinary.com/djhntsyxr/image/upload/v1621033739/jetcompanybr/Sem_t%C3%ADtulo_gej07h.png"></img>
                                 </div>
                             </div>
                         </div>
