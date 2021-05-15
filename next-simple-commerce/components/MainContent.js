@@ -1,4 +1,4 @@
-
+import { IoIosAddCircle } from 'react-icons/io'
 
 function MainContent() {
     return(
@@ -13,194 +13,142 @@ function MainContent() {
                 
 
                 <div className="col-span-8 order-3 lg:order-none">
-                    <div className="grid lg:grid-cols-3 grid-cols-2 gap-9">
+                    <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-9">
                       
                       
-                        <a className="max-h-full cursor-pointer relative w-full h-full bg-gray-200">
-                        <div className="flex flex-row justify-between box-border w-full z-20 absolute">
-                           <div className=" absolute top-0 pr-16 max-w-full ">
-                            <h3 className=" max-w-full w-full bg-white p-4">
-                                Conjunto Red
-                            </h3>
-                            <span className="bg-white inline-block p-4">
-                                R$ 499,90
-                            </span>
 
-                           </div>
-                        </div>
                         
-                        <div className="flex items-center justify-items-center overflow-hidden transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-120">
-                            <div className="block overflow-hidden relative">
-                                <div className="block relative">
-                                    <img src="https://res.cloudinary.com/djhntsyxr/image/upload/v1621033739/jetcompanybr/Sem_t%C3%ADtulo_gej07h.png"></img>
-                                </div>
-                            </div>
-                        </div>
-                        </a>
-                        
-
-                        <a className="max-h-full cursor-pointer relative w-full h-full bg-gray-200 ">
-                        <div className="flex flex-row justify-between box-border w-full z-20 absolute">
-                           <div className=" absolute top-0 pr-16 max-w-full ">
-                            <h3 className=" max-w-full w-full bg-white p-4">
-                            Camiseta Black
-                            </h3>
-                            <span className="bg-white inline-block p-4">
-                             R$ 109,90
-                            </span>
-
-                           </div>
-                        </div>
-                        
-                        <div className="flex items-center justify-items-center overflow-hidden transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-120">
+                        <div className="max-h-full  relative w-full h-full bg-gray-200 ">
+                  
+                        <a href="#" className="flex items-center justify-items-center overflow-hidden transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-120">
                             <div className="block overflow-hidden relative">
                                 <div className="block relative">
                                     <img src="https://res.cloudinary.com/djhntsyxr/image/upload/v1621030538/jetcompanybr/image_1_ivcdvg.png"></img>
                                 </div>
                             </div>
-                        </div>
                         </a>
-                        
 
-                        
-                        <a className="max-h-full cursor-pointer relative w-full h-full bg-gray-200 ">
-                        <div className="flex flex-row justify-between box-border w-full z-20 absolute">
-                           <div className=" absolute top-0 pr-16 max-w-full ">
-                            <h3 className=" max-w-full w-full bg-white p-4">
-                                Touca Black
-                            </h3>
-                            <span className="bg-white inline-block p-4">
-                                R$ 69,90
-                            </span>
-
-                           </div>
-                        </div>
-                        
-                        <div className="flex items-center justify-items-center overflow-hidden transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-120">
-                            <div className="block overflow-hidden relative">
-                                <div className="block relative">
-                                    <img src="https://res.cloudinary.com/djhntsyxr/image/upload/v1621030413/jetcompanybr/image_lro0i7.png"></img>
-                                </div>
-                            </div>
-                        </div>
-                        </a>
-                        
-
-                        <a className="max-h-full cursor-pointer relative w-full h-full bg-gray-200 ">
-                        <div className="flex flex-row justify-between box-border w-full z-20 absolute">
-                           <div className=" absolute top-0 pr-16 max-w-full ">
-                            <h3 className=" max-w-full w-full bg-white p-4">
+                        <div className="flex flex-row justify-between box-border w-full z-20 absolute items-center">
+                           <div className="top-0 pr-16 max-w-full ">
+                            <h3 className="max-w-full w-full bg-white p-1">
                             Camiseta Black
                             </h3>
-                            <span className="bg-white inline-block p-4">
+                            <span className="bg-white inline-block pl-1">
                              R$ 109,90
                             </span>
 
                            </div>
+
+                           <div className=" text-4xl cursor-pointer text-gray-800 hover:text-gray-700">
+                               <button>
+                                   <IoIosAddCircle />
+                               </button>
+                           </div>
                         </div>
-                        
-                        <div className="flex items-center justify-items-center overflow-hidden transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-120">
+                        </div>
+
+
+
+
+                         
+                        <div className="max-h-full  relative w-full h-full bg-gray-200 ">
+                  
+                        <a href="#" className="flex items-center justify-items-center overflow-hidden transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-120">
                             <div className="block overflow-hidden relative">
                                 <div className="block relative">
                                     <img src="https://res.cloudinary.com/djhntsyxr/image/upload/v1621030538/jetcompanybr/image_1_ivcdvg.png"></img>
                                 </div>
                             </div>
-                        </div>
                         </a>
-                        
 
-                        
-                        <a className="max-h-full cursor-pointer relative w-full h-full bg-gray-200 ">
-                        <div className="flex flex-row justify-between box-border w-full z-20 absolute">
-                           <div className=" absolute top-0 pr-16 max-w-full ">
-                            <h3 className=" max-w-full w-full bg-white p-4">
-                                Touca Black
-                            </h3>
-                            <span className="bg-white inline-block p-4">
-                                R$ 69,90
-                            </span>
-
-                           </div>
-                        </div>
-                        
-                        <div className="flex items-center justify-items-center overflow-hidden transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-120">
-                            <div className="block overflow-hidden relative">
-                                <div className="block relative">
-                                    <img src="https://res.cloudinary.com/djhntsyxr/image/upload/v1621030413/jetcompanybr/image_lro0i7.png"></img>
-                                </div>
-                            </div>
-                        </div>
-                        </a>
-                        
-
-                        <a className="max-h-full cursor-pointer relative w-full h-full bg-gray-200 ">
-                        <div className="flex flex-row justify-between box-border w-full z-20 absolute">
-                           <div className=" absolute top-0 pr-16 max-w-full ">
-                            <h3 className=" max-w-full w-full bg-white p-4">
+                        <div className="flex flex-row justify-between box-border w-full z-20 absolute items-center">
+                           <div className="top-0 pr-16 max-w-full ">
+                            <h3 className="max-w-full w-full bg-white p-1">
                             Camiseta Black
                             </h3>
-                            <span className="bg-white inline-block p-4">
+                            <span className="bg-white inline-block pl-1">
                              R$ 109,90
                             </span>
 
                            </div>
+
+                           <div className=" text-4xl cursor-pointer text-gray-800 hover:text-gray-700">
+                               <button>
+                                   <IoIosAddCircle />
+                               </button>
+                           </div>
                         </div>
-                        
-                        <div className="flex items-center justify-items-center overflow-hidden transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-120">
+                        </div>
+
+
+
+
+
+                         
+                        <div className="max-h-full  relative w-full h-full bg-gray-200 ">
+                  
+                        <a href="#" className="flex items-center justify-items-center overflow-hidden transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-120">
                             <div className="block overflow-hidden relative">
                                 <div className="block relative">
                                     <img src="https://res.cloudinary.com/djhntsyxr/image/upload/v1621030538/jetcompanybr/image_1_ivcdvg.png"></img>
                                 </div>
                             </div>
-                        </div>
                         </a>
-                        
 
-                        
-                        <a className="max-h-full cursor-pointer relative w-full h-full bg-gray-200 ">
-                        <div className="flex flex-row justify-between box-border w-full z-20 absolute">
-                           <div className=" absolute top-0 pr-16 max-w-full ">
-                            <h3 className=" max-w-full w-full bg-white p-4">
-                                Touca Black
-                            </h3>
-                            <span className="bg-white inline-block p-4">
-                                R$ 69,90
-                            </span>
-
-                           </div>
-                        </div>
-                        
-                        <div className="flex items-center justify-items-center overflow-hidden transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-120">
-                            <div className="block overflow-hidden relative">
-                                <div className="block relative">
-                                    <img src="https://res.cloudinary.com/djhntsyxr/image/upload/v1621030413/jetcompanybr/image_lro0i7.png"></img>
-                                </div>
-                            </div>
-                        </div>
-                        </a>
-                        
-
-                        <a className="max-h-full cursor-pointer relative w-full h-full bg-gray-200 ">
-                        <div className="flex flex-row justify-between box-border w-full z-20 absolute">
-                           <div className=" absolute top-0 pr-16 max-w-full ">
-                            <h3 className=" max-w-full w-full bg-white p-4">
+                        <div className="flex flex-row justify-between box-border w-full z-20 absolute items-center">
+                           <div className="top-0 pr-16 max-w-full ">
+                            <h3 className="max-w-full w-full bg-white p-1">
                             Camiseta Black
                             </h3>
-                            <span className="bg-white inline-block p-4">
+                            <span className="bg-white inline-block pl-1">
                              R$ 109,90
                             </span>
 
                            </div>
+
+                           <div className=" text-4xl cursor-pointer text-gray-800 hover:text-gray-700">
+                               <button>
+                                   <IoIosAddCircle />
+                               </button>
+                           </div>
                         </div>
-                        
-                        <div className="flex items-center justify-items-center overflow-hidden transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-120">
+                        </div>
+
+
+
+                         
+                        <div className="max-h-full  relative w-full h-full bg-gray-200 ">
+                  
+                        <a href="#" className="flex items-center justify-items-center overflow-hidden transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-120">
                             <div className="block overflow-hidden relative">
                                 <div className="block relative">
                                     <img src="https://res.cloudinary.com/djhntsyxr/image/upload/v1621030538/jetcompanybr/image_1_ivcdvg.png"></img>
                                 </div>
                             </div>
-                        </div>
                         </a>
+
+                        <div className="flex flex-row justify-between box-border w-full z-20 absolute items-center">
+                           <div className="top-0 pr-16 max-w-full ">
+                            <h3 className="max-w-full w-full bg-white p-1">
+                            Camiseta Black
+                            </h3>
+                            <span className="bg-white inline-block pl-1">
+                             R$ 109,90
+                            </span>
+
+                           </div>
+
+                           <div className=" text-4xl cursor-pointer text-gray-800 hover:text-gray-700">
+                               <button>
+                                   <IoIosAddCircle />
+                               </button>
+                           </div>
+                        </div>
+                        </div>
+                        
+
+
+
                         
 
 
