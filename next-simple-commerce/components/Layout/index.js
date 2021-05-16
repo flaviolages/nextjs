@@ -5,6 +5,9 @@ import SideBarNav from "../SideBarNav";
 import NavMenu from "../NavMenu";
 import MainContent from "../MainContent";
 
+import {AiOutlineInstagram, AiOutlineFacebook, AiOutlineWhatsApp} from 'react-icons/ai'
+
+
 function Layout({produtos}){
 
     const [showCart, setShowCart] = useState(false);
@@ -37,8 +40,7 @@ function Layout({produtos}){
 
                             <nav className="hidden ml-6 space-x-4 lg:block">
                                 <a className="cursor-pointer inline-flex items-center text-sm font-semibold text-gray-500 hover:text-gray-900" href="#">All</a>
-                                <a className="cursor-pointer inline-flex items-cente text-sm font-semibold text-gray-500 hover:text-gray-900" href="#">Accessories</a>
-                                <a className="cursor-pointer inline-flex items-cente text-sm font-semibold text-gray-500 hover:text-gray-900" href="#">Clothes</a>
+                                <a className="cursor-pointer inline-flex items-cente text-sm font-semibold text-gray-500 hover:text-gray-900" href="#">About</a>
                                 <a className="cursor-pointer inline-flex items-cente text-sm font-semibold text-gray-500 hover:text-gray-900" href="#">Contact</a>
                             </nav>
                         </div>
@@ -62,7 +64,58 @@ function Layout({produtos}){
         
             <footer>
                 <div className="mx-auto max-w-8xl px-6">
-                    footer
+                    
+                    
+                    <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 border-b border-accents-2 py-12 text-primary bg-primary transition-colors duration-150">
+                        
+                        <div className="col-span-1 lg:col-span-2">
+                           <a className="flex flex-initial items-center font-bold md:mr-24">
+                               <button >
+                               <img className="h-8" src="https://res.cloudinary.com/djhntsyxr/image/upload/v1619115322/jetcompanybr/favicon-jetcompanybr_wnwgvy.png"></img>
+                               </button>
+                           </a>
+                        </div>
+                    <div className="col-span-1 lg:col-span-2">
+                        <ul className="flex flex-initial flex-col md:flex-1">
+                            <li className="py-3 md:py-0 md:pb-4">Home</li>
+                            <li className="py-3 md:py-0 md:pb-4">All</li>
+                            <li className="py-3 md:py-0 md:pb-4">About</li>
+                            <li className="py-3 md:py-0 md:pb-4">Contact</li>
+                        </ul>
+                    </div>
+
+                    <div className="col-span-1 lg:col-span-2">
+                        <ul className="flex flex-initial flex-col md:flex-1">
+                            <li className="py-3 md:py-0 md:pb-4">Terms of use</li>
+                            <li className="py-3 md:py-0 md:pb-4">Privacy Policy</li>
+                        </ul>
+                    </div>
+
+                    <div className="col-span-1 lg:col-span-6 flex items-start lg:justify-end text-primary">
+                        <div className="flex space-x-6 items-center h-10">
+                            <button className="text-2xl">
+                                <AiOutlineInstagram />
+                            </button>
+
+                            <button className="text-2xl">
+                                <AiOutlineFacebook />
+                            </button>
+                            
+                            <button className="text-2xl">
+                                <AiOutlineWhatsApp />
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="py-12 flex flex-col md:flex-row justify-between items-center space-y-4">
+                    <div>
+                        <span>© 2020 Jet Company, Inc. All rights reserved.</span>
+                    </div>
+                </div>
+
+
+
                 </div>
             </footer>
 
