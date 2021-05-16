@@ -31,7 +31,7 @@ function MainContent({produtos}) {
                         </a>
 
                         <div className="flex flex-row justify-between box-border w-full z-20 absolute items-center py-2">
-                           <div className="top-0 pr-16 max-w-full ">
+                           <div className="pr-16 max-w-full mt-2 ml-1">
                             <h3 className="max-w-full w-full bg-white p-1">
                             {produto.titulo}
                             </h3>
@@ -41,9 +41,9 @@ function MainContent({produtos}) {
 
                            </div>
 
-                           <div className="text-4xl cursor-pointer text-gray-800 hover:text-gray-700">
-                               <button className=" text-5xl">
-                                   <IoIosAddCircle />
+                           <div className="cursor-pointer">
+                               <button className="text-4xl text-gray-300 bg-black rounded-full h-10 w-10 flex items-center justify-center">
+                                   +
                                </button>
                            </div>
                         </div>
