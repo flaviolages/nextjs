@@ -13,11 +13,6 @@ export default function Home({produtos}) {
 
       <Layout produtos={produtos} />
 
-      {produtos.map(produto => (
-        <div>
-            {produto.titulo}
-        </div>
-      ))}
 
   </div>
   )
