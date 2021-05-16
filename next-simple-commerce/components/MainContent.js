@@ -67,17 +67,17 @@ function MainContent({produtos}) {
 
                         <div className="flex flex-row justify-between box-border w-full z-20 absolute items-center py-2">
                            <div className="pr-16 max-w-full mt-2 ml-1">
-                            <h3 className="max-w-full w-full bg-white p-1">
+                            <h3 className="max-w-full w-full bg-white p-1  text-xs text-gray-500">
                             {produto.titulo}
                             </h3>
-                            <span className="bg-white inline-block pl-1 text-blue-700 font-semibold text-xs">
+                            <span className="bg-white inline-block pl-1 text-gray-900 font-semibold text-xs">
                              R$ {produto.preco}
                             </span>
 
                            </div>
 
                            <div className="cursor-pointer">
-                                <button className="text-2xl text-gray-700 hover:text-gray-900">
+                                <button className="text-2xl text-gray-600 hover:text-gray-900">
                                     <MdAddShoppingCart />
                                 </button>
                            </div>
