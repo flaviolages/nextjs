@@ -42,9 +42,7 @@ function MainContent({produtos}) {
                            </div>
 
                            <div className="cursor-pointer">
-                               <button className="text-4xl text-gray-300 bg-black rounded-full h-10 w-10 flex items-center justify-center">
-                                   +
-                               </button>
+                               <button className="text-4xl text-gray-300 bg-black hover:bg-gray-800 rounded-full h-10 w-10 flex items-center justify-center">+</button>
                            </div>
                         </div>
                         </div>
