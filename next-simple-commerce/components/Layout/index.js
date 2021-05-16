@@ -5,7 +5,7 @@ import SideBarNav from "../SideBarNav";
 import NavMenu from "../NavMenu";
 import MainContent from "../MainContent";
 
-function Layout(){
+function Layout({produtos}){
 
     const [showCart, setShowCart] = useState(false);
 
@@ -56,7 +56,7 @@ function Layout(){
             </div>
 
             <main className="MainContent bg-write">
-                <MainContent />
+                <MainContent produtos={produtos}/>
             </main>
             
         
