@@ -55,7 +55,7 @@ export default function Home({dados}) {
               </TableCell>
               <TableCell align="right">{row.data}</TableCell>
             </TableRow>
-          ))}
+          )).reverse()}
         </TableBody>
       </Table>
     </TableContainer>
