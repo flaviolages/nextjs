@@ -60,7 +60,7 @@ function MainContent({produtos}) {
                         <a href="#" className="flex bg-gray-500 items-center justify-items-center overflow-hidden transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-120">
                             <div className="block overflow-hidden relative">
                                 <div className="block relative">
-                                    <img src={produto.imagen1}></img>
+                                    <img src={produto.Fotos[0].link}></img>
                                 </div>
                             </div>
                         </a>
@@ -68,7 +68,7 @@ function MainContent({produtos}) {
                         <div className="flex flex-row justify-between box-border w-full z-20 absolute items-center py-2">
                            <div className="pr-16 max-w-full mt-2 ml-1">
                             <h3 className="max-w-full w-full bg-white p-1  text-xs text-gray-500">
-                            {produto.titulo}
+                            {produto.Titulo}
                             </h3>
                             <span className="bg-white inline-block pl-1 text-gray-900 font-semibold text-xs">
                              R$ {produto.preco}

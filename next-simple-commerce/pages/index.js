@@ -20,10 +20,10 @@ export default function Home({produtos}) {
 
 
 export const getStaticProps = async () => {
-  const res = await fetch('https://jetcompanybr.herokuapp.com/produtos');
+  const res = await fetch('https://sitesistema.herokuapp.com/jet-produtos');
   const data = await res.json();
 
-  const resCategorias = await fetch('https://jetcompanybr.herokuapp.com/categorias');
+  const resCategorias = await fetch('https://sitesistema.herokuapp.com/jet-categorias');
   const dataCategorias = await resCategorias.json();
   
   return {
