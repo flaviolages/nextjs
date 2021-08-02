@@ -1,7 +1,22 @@
 import Head from 'next/head'
+import { useState } from 'react';
 import Layout from '../components/Layout'
 
 export default function Home({produtos}) {
+
+  const [cart, setCart] = useState([]);
+  
+
+
+  function addCart(titulo, foto, preco){
+    const itensObj = {titulo, foto, preco }
+    setCart([...cart, itensObj])
+  }
+  function dellItemCart(itemId){
+    const filterCart = cart.filter(cartItem => cart.indexOf(cartItem) !== itemId )
+    setCart(filterCart)
+}
+
   
   return (
     <div>
@@ -11,7 +26,12 @@ export default function Home({produtos}) {
         <link rel="icon" href="https://res.cloudinary.com/djhntsyxr/image/upload/v1619115322/jetcompanybr/favicon-jetcompanybr_wnwgvy.png" />
       </Head>
 
-      <Layout produtos={produtos} />
+      <Layout 
+        produtos={produtos} 
+        cart={cart}
+        addCart={addCart}
+        dellItemCart={dellItemCart}
+      />
 
 
   </div>

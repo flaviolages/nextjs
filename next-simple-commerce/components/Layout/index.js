@@ -8,13 +8,12 @@ import MainContent from "../MainContent";
 import {AiOutlineInstagram, AiOutlineFacebook, AiOutlineWhatsApp} from 'react-icons/ai'
 
 
-function Layout({produtos}){
+function Layout({produtos, cart, addCart, dellItemCart}){
 
     const [showCart, setShowCart] = useState(false);
 
     function clickShowCart() {
         setShowCart(!showCart);
-        return console.log(showCart);
     };
 
 
@@ -22,9 +21,10 @@ function Layout({produtos}){
 
     function clickShowNav() {
         setShowNav(!showNav);
-        return console.log(showNav);
     };
 
+    const totalCart = cart.reduce((acc, current) => acc + current.preco, 0)
+    
     return(
         <div>
             
@@ -39,6 +39,7 @@ function Layout({produtos}){
                             </div>
 
                             <nav className="hidden ml-6 space-x-4 lg:block">
+                           
                                 <a className="cursor-pointer inline-flex items-center text-sm font-semibold text-gray-500 hover:text-gray-900" href="#">All</a>
                                 <a className="cursor-pointer inline-flex items-cente text-sm font-semibold text-gray-500 hover:text-gray-900" href="#">About</a>
                                 <a className="cursor-pointer inline-flex items-cente text-sm font-semibold text-gray-500 hover:text-gray-900" href="#">Contact</a>
@@ -50,7 +51,7 @@ function Layout({produtos}){
                         </div>
 
                         <div className="flex justify-end flex-1 space-x-8">
-                        <CartPerson clickShowCart={clickShowCart} />
+                        <CartPerson clickShowCart={clickShowCart} cart={cart} />
                         </div>
 
                     </div>
@@ -58,7 +59,7 @@ function Layout({produtos}){
             </div>
 
             <main className="MainContent bg-write">
-                <MainContent produtos={produtos}/>
+                <MainContent produtos={produtos} addCart={addCart}/>
             </main>
             
         
@@ -77,10 +78,13 @@ function Layout({produtos}){
                         </div>
                     <div className="col-span-1 lg:col-span-2">
                         <ul className="flex flex-initial flex-col md:flex-1">
+                    
+        
                             <li className="py-3 md:py-0 md:pb-4">Home</li>
                             <li className="py-3 md:py-0 md:pb-4">All</li>
                             <li className="py-3 md:py-0 md:pb-4">About</li>
                             <li className="py-3 md:py-0 md:pb-4">Contact</li>
+                          
                         </ul>
                     </div>
 
@@ -123,6 +127,9 @@ function Layout({produtos}){
             <SideBarCart
                 showCart={showCart}
                 clickShowCart={clickShowCart}
+                cart={cart}
+                dellItemCart={dellItemCart}
+                totalCart={totalCart}
             />
 
             <SideBarNav clickShowNav={clickShowNav} showNav={showNav}/>

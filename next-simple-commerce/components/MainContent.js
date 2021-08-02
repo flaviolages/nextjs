@@ -1,7 +1,7 @@
 import { MdAddShoppingCart } from 'react-icons/md'
 import { AiFillCaretDown } from 'react-icons/ai'
 
-function MainContent({produtos}) {
+function MainContent({produtos, addCart}) {
     return(
         <div className="mx-auto max-w-8xl px-6">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 mt-3 mb-20">
@@ -77,7 +77,7 @@ function MainContent({produtos}) {
                            </div>
 
                            <div className="cursor-pointer">
-                                <button className="text-2xl text-gray-600 hover:text-gray-900">
+                                <button className="text-2xl text-gray-600 hover:text-gray-900" onClick={()=>{addCart(produto.Titulo, produto.Fotos[0].link,produto.preco)}}>
                                     <MdAddShoppingCart />
                                 </button>
                            </div>

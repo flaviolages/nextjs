@@ -1,11 +1,10 @@
 import { AiOutlineClose, AiOutlineDelete     } from 'react-icons/ai';
 import CartPerson from './CartPerson';
 
-function SideBarCart(props){
+function SideBarCart({showCart,clickShowCart,cart, dellItemCart,totalCart}){
 
     return(
-
-        <div className={props.showCart ? 'SideBarCart ' : 'SideBarCart hidden'}>
+        <div className={showCart ? 'SideBarCart ' : 'SideBarCart hidden'}>
         <div className="absolute inset-0 overflow-hidden">
             <div class="absolute inset-0 bg-black bg-opacity-50 transition-opacity"></div>
                 <section className="absolute inset-y-0 right-0 pl-10 max-w-full flex sm:pl-16 outline-none">
@@ -15,12 +14,12 @@ function SideBarCart(props){
                                 <header className="px-4 pt-4 pb-4 sm:px-6">
                                     <div className="flex items-start justify-between space-x-3">
                                         <div className="h-7 flex items-center">
-                                            <button onClick={props.clickShowCart} className="hover:text-gray-600">
+                                            <button onClick={clickShowCart} className="hover:text-gray-600">
                                             <AiOutlineClose />
                                             </button>
                                         </div>
                                        
-                                        <CartPerson clickShowCart={props.clickShowCart}/>
+                                        <CartPerson clickShowCart={clickShowCart}/>
                                         
 
                                     </div>
@@ -35,98 +34,34 @@ function SideBarCart(props){
 
 
 
-                                            <li className="flex flex-row space-x-8 py-8">
+                                        {cart.map((it,index) => (
+
+                                                <li className="flex flex-row space-x-8 py-8">
                                                
                                                 <div className="w-16 h-16 bg-violet relative overflow-hidden cursor-pointer">
                                                     <div className="">
                                                         <div className="block max-w-max">
-                                                            <img src="https://res.cloudinary.com/djhntsyxr/image/upload/v1621030413/jetcompanybr/image_lro0i7.png"></img>
+                                                            <img src={it.foto}></img>
                                                         </div>
                                                     </div>
                                                 </div>
-
+    
                                                 <div className="flex-1 flex flex-col text-base">
-                                                <h2 className="font-bold text-lg cursor-pointer leading-6">Touca Black</h2>
-                                                </div>
+                                                <h2 className="font-bold text-lg cursor-pointer leading-6">
+                                                {it.titulo}
 
+                                                </h2>
+                                                </div>
+    
                                                 <div className="flex flex-col justify-between space-y-2 text-base">
-                                                    <h3>R$69,90</h3>
-                                                    <button className="flex justify-end outline-none">
+                                                    <h3>{it.preco}</h3>
+                                                    <button className="flex justify-end outline-none" onClick={() => {dellItemCart(index)}}>
                                                         <AiOutlineDelete />
                                                     </button>
                                                 </div>
-                                            </li>   
+                                            </li>  
 
-
-                                            <li className="flex flex-row space-x-8 py-8">
-                                               
-                                               <div className="w-16 h-16 bg-violet relative overflow-hidden cursor-pointer">
-                                                   <div className="">
-                                                       <div className="block max-w-max">
-                                                           <img src="https://res.cloudinary.com/djhntsyxr/image/upload/v1621030538/jetcompanybr/image_1_ivcdvg.png"></img>
-                                                       </div>
-                                                   </div>
-                                               </div>
-
-                                               <div className="flex-1 flex flex-col text-base">
-                                               <h2 className="font-bold text-lg cursor-pointer leading-6">Camise Black</h2>
-                                               </div>
-
-                                               <div className="flex flex-col justify-between space-y-2 text-base">
-                                                   <h3>R$109,90</h3>
-                                                   <button className="flex justify-end outline-none">
-                                                       <AiOutlineDelete />
-                                                   </button>
-                                               </div>
-                                           </li>  
-
-                                           <li className="flex flex-row space-x-8 py-8">
-                                               
-                                               <div className="w-16 h-16 bg-violet relative overflow-hidden cursor-pointer">
-                                                   <div className="">
-                                                       <div className="block max-w-max">
-                                                           <img src="https://res.cloudinary.com/djhntsyxr/image/upload/v1621030538/jetcompanybr/image_1_ivcdvg.png"></img>
-                                                       </div>
-                                                   </div>
-                                               </div>
-
-                                               <div className="flex-1 flex flex-col text-base">
-                                               <h2 className="font-bold text-lg cursor-pointer leading-6">Camise Black</h2>
-                                               </div>
-
-                                               <div className="flex flex-col justify-between space-y-2 text-base">
-                                                   <h3>R$109,90</h3>
-                                                   <button className="flex justify-end outline-none">
-                                                       <AiOutlineDelete />
-                                                   </button>
-                                               </div>
-                                           </li>
-
-
-
-                                           <li className="flex flex-row space-x-8 py-8">
-                                               
-                                               <div className="w-16 h-16 bg-violet relative overflow-hidden cursor-pointer">
-                                                   <div className="">
-                                                       <div className="block max-w-max">
-                                                           <img src="https://res.cloudinary.com/djhntsyxr/image/upload/v1621030538/jetcompanybr/image_1_ivcdvg.png"></img>
-                                                       </div>
-                                                   </div>
-                                               </div>
-
-                                               <div className="flex-1 flex flex-col text-base">
-                                               <h2 className="font-bold text-lg cursor-pointer leading-6">Camise Black</h2>
-                                               </div>
-
-                                               <div className="flex flex-col justify-between space-y-2 text-base">
-                                                   <h3>R$109,90</h3>
-                                                   <button className="flex justify-end outline-none">
-                                                       <AiOutlineDelete />
-                                                   </button>
-                                               </div>
-                                           </li>
-
-
+                                        ))}
 
                                         </ul>
                                     </div>         
@@ -137,24 +72,26 @@ function SideBarCart(props){
                                         <ul className="py-3">
                                             <li className="flex justify-between py-1">
                                                 <span>Subtotal</span>
-                                                <span>R$211</span>
+                                                <span>R${totalCart}</span>
                                             </li>
 
                                             <li className="flex justify-between py-1">
                                                 <span>Frete</span>
-                                                <span>R$211</span>
+                                                <span>Grátis</span>
                                             </li>
                                         </ul>
 
                                         <div className="flex justify-between border-t border-accents-3 py-3 font-bold mb-10">
                                         <span>Total</span>
-                                        <span>R$211</span>
+                                        <span>R${totalCart}</span>
                                         </div>
                                     </div>
                                     </div>
 
                                     <button className="w-full bg-black py-4">
-                                        <span className="text-gray-100">Comprar</span>
+                                        <span className="text-gray-100">
+                                        Comprar
+                                        </span>
                                     </button>
 
                                 </div>
