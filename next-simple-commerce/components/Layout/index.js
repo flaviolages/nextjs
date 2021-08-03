@@ -29,6 +29,8 @@ function Layout({produtos, cart, addCart, dellItemCart}){
         cart.map(a => (ac += '1: '+a.titulo+'%0a'))
         let str = ac.replace(/\s/g, '%20');
         let linkWts = linkWtss + str + '%0aTotal%20:%20' + totalCart
+        let qntCart = cart.length
+        console.log(qntCart)
 
     return(
         <div>
@@ -56,7 +58,7 @@ function Layout({produtos, cart, addCart, dellItemCart}){
                         </div>
 
                         <div className="flex justify-end flex-1 space-x-8">
-                        <CartPerson clickShowCart={clickShowCart} cart={cart} />
+                        <CartPerson clickShowCart={clickShowCart} cart={cart} qntCart={qntCart} />
                         </div>
 
                     </div>
