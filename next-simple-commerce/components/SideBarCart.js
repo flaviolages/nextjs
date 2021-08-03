@@ -1,7 +1,7 @@
 import { AiOutlineClose, AiOutlineDelete     } from 'react-icons/ai';
 import CartPerson from './CartPerson';
 
-function SideBarCart({showCart,clickShowCart,cart, dellItemCart,totalCart}){
+function SideBarCart({showCart,clickShowCart,cart, dellItemCart,totalCart,linkWts}){
 
     return(
         <div className={showCart ? 'SideBarCart ' : 'SideBarCart hidden'}>
@@ -90,7 +90,7 @@ function SideBarCart({showCart,clickShowCart,cart, dellItemCart,totalCart}){
 
                                     <button className="w-full bg-black py-4">
                                         <span className="text-gray-100">
-                                        Comprar
+                                        <a href={linkWts} target="_blank">Comprar</a>
                                         </span>
                                     </button>
 
