@@ -24,9 +24,9 @@ function Layout({produtos, cart, addCart, dellItemCart}){
     };
 
     const totalCart = cart.reduce((acc, current) => acc + current.preco, 0)
-        let linkWtss = 'https://wa.me/555499298699?text='
+        let linkWtss = 'https://wa.me/555499298699?text=Ola,%20Meu%20Pedido:%0a'
         let ac = '';
-        cart.map(a => (ac += '1 : '+a.titulo+'%0a'))
+        cart.map(a => (ac += '1: '+a.titulo+'%0a'))
         let str = ac.replace(/\s/g, '%20');
         let linkWts = linkWtss + str + '%0aTotal%20:%20' + totalCart
 
